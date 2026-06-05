@@ -185,12 +185,12 @@ h2 {
 }
 
 #interests li {
-    color: #982e2e;
+    color: #cf9c9c;
     font-size: 1rem;
     font-weight: 600;
     padding: 10px 20px;
-    background: #a43131;
-    border: 1px solid #ddd;
+    background: #b96565;
+    border: 1px solid #815050;
     border-radius: 100px;
     transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
     cursor: default;
@@ -211,7 +211,7 @@ h2 {
     display: block;
     border-radius: 16px;
     filter: grayscale(100%);
-    box-shadow: 0 8px 30px rgba(176, 20, 20, 0.12);
+    box-shadow: 0 8px 30px rgba(149, 41, 41, 0.12);
     transition: filter 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -219,5 +219,48 @@ h2 {
     filter: grayscale(0%);
     transform: translateY(-4px);
     box-shadow: 0 16px 40px rgba(197, 5, 5, 0.18);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    padding: 16px 24px;
+    background: #fff;
+    border: 1px solid #575fcb;
+    border-radius: 12px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #e56262;
+}
+
+#nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 8px;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.nav-li a:hover {
+    background: #ce1e1e;
+    color: #fff;
 }
 
