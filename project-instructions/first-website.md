@@ -3,6 +3,7 @@
 ### 🎉🎉🎉 It's time to create your very own website! 🎉🎉🎉
 
 ## **Table of Contents**
+
 - [Overview](#overview)
   - [Specs](#specs)
   - [The Big 3](#the-big-3-html-css-and-javascript)
@@ -20,6 +21,7 @@
 ## **Overview**
 
 🎯 **Goal:** Build and publish your own website on the internet using GitHub Pages! In this project, you'll:
+
 - Learn how **HTML, CSS, and JavaScript** work together to create a webpage.
 - Host your live website on **GitHub Pages**—a free service that lets you share your site with anyone online.
 - Add personalized content, such as your interests and photos, to make the website your own.
@@ -29,6 +31,7 @@
 ## **Specs**
 
 These are the **requirements** for your website:
+
 - You will use **HTML** to structure your page, **CSS** to style it, and **JavaScript** for interactivity.
 - The site will feature **a short profile about you**, including your interests, an image, and other personalized content.
 - It will be **hosted on GitHub Pages** and viewable on the internet.
@@ -116,6 +119,7 @@ To build a webpage, you'll need to use three key tools:
 ---
 
 ### ✅ **Check Your Work!**
+
 - **After each TODO**, double-check your code to ensure it matches the examples.
 - If you encounter issues, **preview your site** using Live Server to troubleshoot.
 
@@ -177,6 +181,7 @@ There are two ways to open your project with **Live Server**:
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **After launching Live Server**, your browser should open a new tab with your site.
 - At the beginning of this project, you will have a completely blank webpage. You will add content to your page as you work through the project.
 
@@ -194,11 +199,9 @@ There are two ways to open your project with **Live Server**:
 ### Step-by-Step Instructions
 
 1. 🔍 **Find the file tree**
-
    - Look to the **left side of your codespace** and find the list of project files and folders.
 
 2. **Open the `index.html` file**
-
    - 📂 Inside the file tree, **click on `index.html`** to open it.
 
 3. 🔍 **Locate the `<title>` element inside the `<head>` element**
@@ -253,23 +256,19 @@ Your updated code should look like this:
 ### Phase 1: Add the HTML
 
 1. 🔍 **Find the `<div id="all-contents">` element** inside `index.html`
-
    - Look for this part of the code:
+
      ```html
      <!-- All content goes here -->
-     <div id="all-contents">
-
-     </div>
+     <div id="all-contents"></div>
      ```
 
 2. **Add a placeholder comment inside `<div id="all-contents">`**, just above where the `<main>` element will go.
-
    - Inside `<div id="all-contents">`, type this HTML comment on the first line:
 
      ```html
      <div id="all-contents">
        <!-- nav goes here (TODO 6) -->
-
      </div>
      ```
 
@@ -291,7 +290,6 @@ Your updated code should look like this:
 ---
 
 3. **Add a `<main>` element inside `<div id="all-contents">`**, and place two `<div>` elements inside of it — one with `class="sidebar"` and one with `class="content"`.
-
    - Your updated code should look like this:
 
      ```html
@@ -299,13 +297,9 @@ Your updated code should look like this:
        <!-- nav goes here (TODO 6) -->
 
        <main>
-         <div class="sidebar">
+         <div class="sidebar"></div>
 
-         </div>
-
-         <div class="content">
-
-         </div>
+         <div class="content"></div>
        </main>
      </div>
      ```
@@ -330,6 +324,7 @@ Your updated code should look like this:
 <br>
 
 ### ✅ **Check Your Work! (Phase 1)**
+
 - Open your `index.html` file and confirm that the `<main>` element with its two inner `<div>` elements is **inside** `<div id="all-contents">`.
 - **Preview your site** using **Live Server**. The page should still appear blank — that's expected!
 
@@ -344,13 +339,12 @@ Now you're going to **link your CSS file** to your HTML page and add styles! Rea
 1. 🔍 **Open `index.html` and find the `<head>` element**
 
 2. **Add a `<link>` tag inside the `<head>` element** to connect the CSS file to your HTML page. The `<link>` tag should have these attributes: `rel="stylesheet"` and `href="style.css"`.
-
    - Your `<head>` should now look like this:
 
      ```html
      <head>
        <title>My Awesome Website</title>
-       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="style.css" />
      </head>
      ```
 
@@ -358,43 +352,41 @@ Now you're going to **link your CSS file** to your HTML page and add styles! Rea
 
    ```css copy
    * {
-       box-sizing: border-box;
+     box-sizing: border-box;
    }
 
    body {
-       margin: 0;
-       background: #f5f5f5;
-       color: #222;
-       font-family: "Helvetica Neue", Arial, sans-serif;
+     margin: 0;
+     background: #f5f5f5;
+     color: #222;
+     font-family: "Helvetica Neue", Arial, sans-serif;
    }
 
    #all-contents {
-       max-width: 1500px;
-       min-height: 100vh;
-       margin: 0 auto;
-       padding: 32px 40px;
+     max-width: 1500px;
+     min-height: 100vh;
+     margin: 0 auto;
+     padding: 32px 40px;
    }
 
    main {
-       display: grid;
-       grid-template-columns: minmax(220px, 1fr) minmax(420px, 1.6fr);
-       align-items: center;
-       min-height: calc(100vh - 160px);
-       gap: clamp(32px, 5vw, 80px);
+     display: grid;
+     grid-template-columns: minmax(220px, 1fr) minmax(420px, 1.6fr);
+     align-items: center;
+     min-height: calc(100vh - 160px);
+     gap: clamp(32px, 5vw, 80px);
    }
 
    .sidebar {
-       width: 100%;
+     width: 100%;
    }
 
    .content {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-       gap: 12px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 12px;
    }
-
-
    ```
 
 ---
@@ -417,6 +409,7 @@ Now you're going to **link your CSS file** to your HTML page and add styles! Rea
 <br>
 
 ### ✅ **Check Your Work! (Phase 2)**
+
 - **Preview your site** using **Live Server**. You should now see a light gray page with the sidebar area on the left and a content area on the right.
 - The page is clean with no visible content yet, but the **structure** is there. Nice work!
 
@@ -432,11 +425,9 @@ Here's an example using a warm off-white theme:
 
 ```css copy
 body {
-    background: #faf8f5; /* warm paper */
-    color: #333;
+  background: #faf8f5; /* warm paper */
+  color: #333;
 }
-
-
 ```
 
 You don't have to use these exact colors — pick colors that feel like **you**! Try the [MDN color picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Color_picker_tool) or search "hex color picker" in Google to find colors you love. Light backgrounds like `#f5f5f5`, `#faf8f5`, or `#eef1f5` all look great. Want to go dark? Try `#111` or `#0a0a0a`!
@@ -461,6 +452,7 @@ You don't have to use these exact colors — pick colors that feel like **you**!
 <br>
 
 ### ✅ **Check Your Work! (Phase 3)**
+
 - **Preview your site** using **Live Server**. Your layout should now show your custom colors.
 - The sidebar and content areas should still be visible with your new color scheme. If something looks off, double-check that your hex codes start with `#` and have exactly 6 characters after it.
 
@@ -493,18 +485,15 @@ You don't have to use these exact colors — pick colors that feel like **you**!
 ### Phase 1: Add the HTML
 
 1. 🔍 **Find the `<div class="content">` element** inside `index.html`
-
    - Look for this part of the code:
-     ```html
-     <div class="content">
 
-     </div>
+     ```html
+     <div class="content"></div>
      ```
 
 2. **Add an `<h2>` element** inside `<div class="content">` with your name.
 
 3. **Add a `<p>` element** below the `<h2>` with your position or title (like `Student at Unicorn High` or `Future Software Engineer`).
-
    - Your updated code should look like this:
 
      ```html
@@ -534,6 +523,7 @@ You don't have to use these exact colors — pick colors that feel like **you**!
 <br>
 
 ### ✅ **Check Your Work! (Phase 1)**
+
 - **Preview your site** using **Live Server**. You should see your name and title displayed in the content area on the right side of the layout.
 - The text will look plain with default browser styling — that's expected for now!
 
@@ -547,25 +537,23 @@ You don't have to use these exact colors — pick colors that feel like **you**!
 
    ```css copy
    h2 {
-       margin: 0;
-       font-size: clamp(4rem, 10vw, 7rem);
-       line-height: 0.9;
-       font-weight: 900;
-       letter-spacing: -0.04em;
-       text-transform: uppercase;
-       color: #000;
+     margin: 0;
+     font-size: clamp(4rem, 10vw, 7rem);
+     line-height: 0.9;
+     font-weight: 900;
+     letter-spacing: -0.04em;
+     text-transform: uppercase;
+     color: #000;
    }
 
    .content > p {
-       margin: 0;
-       color: #999;
-       font-size: 0.9rem;
-       text-transform: uppercase;
-       letter-spacing: 0.15em;
-       line-height: 1.4;
+     margin: 0;
+     color: #999;
+     font-size: 0.9rem;
+     text-transform: uppercase;
+     letter-spacing: 0.15em;
+     line-height: 1.4;
    }
-
-
    ```
 
 ---
@@ -588,6 +576,7 @@ You don't have to use these exact colors — pick colors that feel like **you**!
 <br>
 
 ### ✅ **Check Your Work! (Phase 2)**
+
 - **Preview your site** using **Live Server**. Your name should appear large and bold black, and your title should appear in a softer gray tone below it.
 - The contrast between the bold name and muted title creates visual hierarchy — your eye goes to the name first!
 
@@ -603,14 +592,12 @@ Here's an example:
 
 ```css copy
 h2 {
-    color: #e94560; /* bright accent */
+  color: #e94560; /* bright accent */
 }
 
 .content p {
-    color: #a8b2d8;
+  color: #a8b2d8;
 }
-
-
 ```
 
 Choose colors that complement the background you picked in TODO 2. Your name should stand out — try a bold or bright color for the `<h2>`. Your title can be a softer or lighter shade.
@@ -620,6 +607,7 @@ Choose colors that complement the background you picked in TODO 2. Your name sho
 <br>
 
 ### ✅ **Check Your Work! (Phase 3)**
+
 - **Preview your site** using **Live Server**. Your name and title should now display in the custom colors you chose.
 - Make sure the text is still easy to read against your background. If it's hard to see, try a darker or brighter color.
 
@@ -637,7 +625,6 @@ Choose colors that complement the background you picked in TODO 2. Your name sho
 ### Phase 1: Add the HTML
 
 1. 🔍 **Find the `<div class="content">` element** in `index.html`
-
    - Look for this section in your code (it should already have your `<h2>` name and `<p>` position from TODO 3):
      ```html
      <div class="content">
@@ -647,7 +634,6 @@ Choose colors that complement the background you picked in TODO 2. Your name sho
      ```
 
 2. **Add a new `<div id="interests">` section below your `<p>` element**, inside `<div class="content">`.
-
    - Inside this new div, add an `<h3>` heading and a `<ul>` with three `<li>` items listing your interests.
 
    - Your updated code should look like this:
@@ -673,6 +659,7 @@ Choose colors that complement the background you picked in TODO 2. Your name sho
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - You should see your interests listed with default browser bullet points below your name and position.
 - It will look plain — that's expected! You'll style it next.
@@ -689,48 +676,49 @@ Now let's make the interests section look clean and modern.
 
    ```css copy
    #interests {
-       margin-top: 32px;
-       width: 100%;
+     margin-top: 32px;
+     width: 100%;
    }
 
    #interests h3 {
-       margin: 0 0 12px;
-       font-size: 0.75rem;
-       font-weight: 700;
-       text-transform: uppercase;
-       letter-spacing: 0.2em;
-       color: #aaa;
+     margin: 0 0 12px;
+     font-size: 0.75rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+     color: #aaa;
    }
 
    #interests ul {
-       list-style: none;
-       margin: 0;
-       padding: 0;
-       display: flex;
-       flex-wrap: wrap;
-       gap: 8px;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
    }
 
    #interests li {
-       color: #555;
-       font-size: 1rem;
-       font-weight: 600;
-       padding: 10px 20px;
-       background: #fff;
-       border: 1px solid #ddd;
-       border-radius: 100px;
-       transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
-       cursor: default;
+     color: #555;
+     font-size: 1rem;
+     font-weight: 600;
+     padding: 10px 20px;
+     background: #fff;
+     border: 1px solid #ddd;
+     border-radius: 100px;
+     transition:
+       background 0.25s ease,
+       color 0.25s ease,
+       transform 0.25s ease;
+     cursor: default;
    }
 
    #interests li:hover {
-       background: #000;
-       color: #fff;
-       border-color: #000;
-       transform: translateY(-2px);
+     background: #000;
+     color: #fff;
+     border-color: #000;
+     transform: translateY(-2px);
    }
-
-
    ```
 
 ---
@@ -753,6 +741,7 @@ Now let's make the interests section look clean and modern.
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your interests should appear as pill-shaped tags with white backgrounds and a styled heading.
 - **Hover your mouse over each interest** — they should smoothly flip to black with white text and lift up! This makes your page feel interactive and alive.
@@ -766,7 +755,6 @@ Now make the interests section **yours**. Pick colors that match your personalit
 1. 🔍 **Find the CSS rules you just added** in `style.css`
 
 2. **Update these properties** with any colors you like:
-
    - Change the **heading color** on `#interests h3`
    - Change the **pill background** on `#interests li`
    - Change the **hover background** on `#interests li:hover`
@@ -775,21 +763,19 @@ Now make the interests section **yours**. Pick colors that match your personalit
 
    ```css copy
    #interests h3 {
-       color: #e94560;
+     color: #e94560;
    }
 
    #interests li {
-       background: #ffe8ec;
-       border-color: #e94560;
-       color: #e94560;
+     background: #ffe8ec;
+     border-color: #e94560;
+     color: #e94560;
    }
 
    #interests li:hover {
-       background: #e94560;
-       color: #fff;
+     background: #e94560;
+     color: #fff;
    }
-
-
    ```
 
 ---
@@ -797,6 +783,7 @@ Now make the interests section **yours**. Pick colors that match your personalit
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your interests section should now pop with your custom colors.
 - Make sure the hover effect still works — try different color combos until you find one you love!
@@ -815,12 +802,10 @@ Now make the interests section **yours**. Pick colors that match your personalit
 ### Phase 1: Add the HTML
 
 1. 🔍 **Find the `<div class="sidebar">` element** in `index.html`
-
    - Look for this part of the code inside the `<main>` element:
-     ```html
-     <div class="sidebar">
 
-     </div>
+     ```html
+     <div class="sidebar"></div>
      ```
 
 2. **Add an `<img>` tag inside the `<div class="sidebar">` element**
@@ -828,7 +813,7 @@ Now make the interests section **yours**. Pick colors that match your personalit
    - Add a `class="sidebar-img"` attribute, a `src="CHANGE_ME"` attribute, and an `alt` attribute:
      ```html
      <div class="sidebar">
-       <img class="sidebar-img" src="CHANGE_ME" alt="My image">
+       <img class="sidebar-img" src="CHANGE_ME" alt="My image" />
      </div>
      ```
 
@@ -846,7 +831,11 @@ Now make the interests section **yours**. Pick colors that match your personalit
    - Example:
      ```html
      <div class="sidebar">
-       <img class="sidebar-img" src="https://example.com/image.jpg" alt="My image">
+       <img
+         class="sidebar-img"
+         src="https://example.com/image.jpg"
+         alt="My image"
+       />
      </div>
      ```
 
@@ -855,6 +844,7 @@ Now make the interests section **yours**. Pick colors that match your personalit
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - You should see your image, but it's probably way too big and overflows the sidebar. Don't worry — CSS will fix that next!
 
@@ -870,24 +860,25 @@ Let's tame that image and give it a curated, editorial look — like a photo in 
 
    ```css copy
    .sidebar-img {
-       width: 100%;
-       max-width: 760px;
-       aspect-ratio: 3 / 4;
-       object-fit: cover;
-       display: block;
-       border-radius: 16px;
-       filter: grayscale(100%);
-       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-       transition: filter 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+     width: 100%;
+     max-width: 760px;
+     aspect-ratio: 3 / 4;
+     object-fit: cover;
+     display: block;
+     border-radius: 16px;
+     filter: grayscale(100%);
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+     transition:
+       filter 0.4s ease,
+       transform 0.4s ease,
+       box-shadow 0.4s ease;
    }
 
    .sidebar-img:hover {
-       filter: grayscale(0%);
-       transform: translateY(-4px);
-       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+     filter: grayscale(0%);
+     transform: translateY(-4px);
+     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
    }
-
-
    ```
 
 ---
@@ -910,6 +901,7 @@ Let's tame that image and give it a curated, editorial look — like a photo in 
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your image should now fit neatly in the sidebar with rounded corners, a shadow, and a black-and-white filter. **Hover over it** — it should reveal full color and lift up!
 
@@ -922,7 +914,6 @@ You can keep the black-and-white-to-color hover effect or try different options:
 1. 🔍 **Find the `.sidebar-img` rule** in `style.css`
 
 2. **Try one of these filter options:**
-
    - **Keep black & white** (already applied — skip this step if you like it!)
    - **Remove the filter entirely** to show full color: delete the `filter` line
    - **Try a warm tone**: `filter: sepia(0.3) contrast(1.05);`
@@ -933,16 +924,14 @@ You can keep the black-and-white-to-color hover effect or try different options:
 
    ```css copy
    .sidebar-img {
-       width: 100%;
-       max-width: 760px;
-       aspect-ratio: 3 / 4;
-       object-fit: cover;
-       display: block;
-       border-radius: 24px;
-       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+     width: 100%;
+     max-width: 760px;
+     aspect-ratio: 3 / 4;
+     object-fit: cover;
+     display: block;
+     border-radius: 24px;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
    }
-
-
    ```
 
 ---
@@ -950,6 +939,7 @@ You can keep the black-and-white-to-color hover effect or try different options:
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your image should look polished — whether in black & white, warm tone, or full color.
 - The sidebar should feel intentional and designed!
@@ -970,20 +960,17 @@ Your page already has a name, interests, and an image. Now let's add the finishi
 ### Phase 1: Add the HTML
 
 1. 🔍 **Find the `<div id="all-contents">` element** in `index.html`
-
    - The `<nav>` needs to go **inside `<div id="all-contents">`** but **above `<main>`**:
+
      ```html
      <div id="all-contents">
        <!-- Nav goes HERE, above main -->
 
-       <main>
-         ...
-       </main>
+       <main>...</main>
      </div>
      ```
 
 2. **Add a `<nav>` element** with an `<h1>` site title and a `<ul id="nav-ul">` containing two navigation links.
-
    - Your updated code should look like this:
 
      ```html
@@ -996,9 +983,7 @@ Your page already has a name, interests, and an image. Now let's add the finishi
          </ul>
        </nav>
 
-       <main>
-         ...
-       </main>
+       <main>...</main>
      </div>
      ```
 
@@ -1022,6 +1007,7 @@ Your page already has a name, interests, and an image. Now let's add the finishi
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - You should see your site title and two links (Home and Portfolio) at the top of the page with default browser styles — bulleted and unstyled. The page structure is nearly complete!
 
@@ -1037,49 +1023,49 @@ Let's turn that plain list of links into a clean, minimal navigation bar. Notice
 
    ```css copy
    nav {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       margin-bottom: 48px;
-       padding: 16px 24px;
-       background: #fff;
-       border: 1px solid #e0e0e0;
-       border-radius: 12px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 48px;
+     padding: 16px 24px;
+     background: #fff;
+     border: 1px solid #e0e0e0;
+     border-radius: 12px;
    }
 
    nav h1 {
-       margin: 0;
-       font-size: 0.8rem;
-       font-weight: 700;
-       text-transform: uppercase;
-       letter-spacing: 0.2em;
-       color: #000;
+     margin: 0;
+     font-size: 0.8rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.2em;
+     color: #000;
    }
 
    #nav-ul {
-       list-style: none;
-       display: flex;
-       gap: 8px;
-       margin: 0;
-       padding: 0;
+     list-style: none;
+     display: flex;
+     gap: 8px;
+     margin: 0;
+     padding: 0;
    }
 
    .nav-li a {
-       color: #666;
-       text-decoration: none;
-       font-size: 0.85rem;
-       font-weight: 500;
-       padding: 6px 14px;
-       border-radius: 8px;
-       transition: background 0.25s ease, color 0.25s ease;
+     color: #666;
+     text-decoration: none;
+     font-size: 0.85rem;
+     font-weight: 500;
+     padding: 6px 14px;
+     border-radius: 8px;
+     transition:
+       background 0.25s ease,
+       color 0.25s ease;
    }
 
    .nav-li a:hover {
-       background: #000;
-       color: #fff;
+     background: #000;
+     color: #fff;
    }
-
-
    ```
 
 ---
@@ -1102,6 +1088,7 @@ Let's turn that plain list of links into a clean, minimal navigation bar. Notice
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your navigation should be a clean white card with your small uppercase site title on the left and links on the right.
 - **Hover over the links** — they should flip to black pill buttons!
@@ -1121,24 +1108,22 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 
    ```css copy
    nav {
-       background: #1a1a2e;
-       border-color: #1a1a2e;
+     background: #1a1a2e;
+     border-color: #1a1a2e;
    }
 
    nav h1 {
-       color: #e94560;
+     color: #e94560;
    }
 
    .nav-li a {
-       color: #a8b2d8;
+     color: #a8b2d8;
    }
 
    .nav-li a:hover {
-       background: #e94560;
-       color: #fff;
+     background: #e94560;
+     color: #fff;
    }
-
-
    ```
 
 ---
@@ -1146,6 +1131,7 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 <br>
 
 ### ✅ **Check Your Work!**
+
 - **Preview your site** using **Live Server**.
 - Your nav bar should now match your personal color scheme.
 - Scroll through your entire page — you built this! A navigation bar, a sidebar with an image, a content area with your name and interests, all styled with your own colors.
@@ -1183,7 +1169,6 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 ### Step-by-Step Instructions
 
 1. **Open the terminal in your codespace**
-
    - If the terminal isn't visible, click the **Hamburger Menu > Terminal > New Terminal**.
 
 2. **Enter the following commands one by one** in the terminal, pressing enter after each command to run it:
@@ -1218,8 +1203,8 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 ### Step-by-Step Instructions
 
 1. **Comment out or remove the CSS link**
-
    - In your `index.html` file, find the `<link>` tag in the `<head>` section:
+
      ```html
      <link rel="stylesheet" href="style.css" />
      ```
@@ -1230,7 +1215,6 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
      ```
 
 2. **Add the Tailwind CSS CDN**
-
    - In the `<head>` section, add the Tailwind CSS script tag:
      ```html
      <head>
@@ -1241,32 +1225,39 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
      ```
 
 3. **Update your body classes**
-
    - Replace your `<body>` tag with Tailwind utility classes:
      ```html
-     <body class="bg-blue-50 text-gray-800 p-4 font-sans">
+     <body class="bg-blue-50 text-gray-800 p-4 font-sans"></body>
      ```
 
 4. **Update the main container**
-
    - Update your `<div id="all-contents">` to use Tailwind classes:
      ```html
-     <div id="all-contents" class="max-w-4xl mx-auto">
+     <div id="all-contents" class="max-w-4xl mx-auto"></div>
      ```
 
 5. **Modernize your navigation**
-
    - Replace your `<nav>` section with this Tailwind-styled version:
      ```html
      <nav class="bg-blue-500 p-4 rounded-lg mb-4 shadow-md">
        <div class="flex justify-between items-center">
-         <h1 class="text-white text-2xl font-bold">Your Name's Amazing Website</h1>
+         <h1 class="text-white text-2xl font-bold">
+           Your Name's Amazing Website
+         </h1>
          <ul class="flex space-x-4">
            <li>
-             <a href="index.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Home</a>
+             <a
+               href="index.html"
+               class="text-white hover:text-blue-200 px-3 py-2 rounded"
+               >Home</a
+             >
            </li>
            <li>
-             <a href="portfolio.html" class="text-white hover:text-blue-200 px-3 py-2 rounded">Portfolio</a>
+             <a
+               href="portfolio.html"
+               class="text-white hover:text-blue-200 px-3 py-2 rounded"
+               >Portfolio</a
+             >
            </li>
          </ul>
        </div>
@@ -1274,8 +1265,8 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
      ```
 
 6. **Update your main content area**
-
    - Replace your `<main>` section with this responsive layout:
+
      ```html
      <main class="bg-white rounded-lg shadow-lg p-6">
        <div class="flex flex-col md:flex-row gap-6">
@@ -1295,11 +1286,19 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 
            <!-- Interests section -->
            <div class="border-2 border-gray-300 rounded-lg p-4">
-             <h3 class="text-xl font-semibold mb-3 text-gray-800">My Interests</h3>
+             <h3 class="text-xl font-semibold mb-3 text-gray-800">
+               My Interests
+             </h3>
              <ul class="space-y-2">
-               <li class="bg-blue-100 px-3 py-2 rounded text-blue-800">Interest 1</li>
-               <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">Interest 2</li>
-               <li class="bg-green-100 px-3 py-2 rounded text-green-800">Interest 3</li>
+               <li class="bg-blue-100 px-3 py-2 rounded text-blue-800">
+                 Interest 1
+               </li>
+               <li class="bg-pink-100 px-3 py-2 rounded text-pink-800">
+                 Interest 2
+               </li>
+               <li class="bg-green-100 px-3 py-2 rounded text-green-800">
+                 Interest 3
+               </li>
              </ul>
            </div>
          </div>
@@ -1336,16 +1335,19 @@ Now your website has a header, content, sidebar, and nav — it's a REAL website
 Now you can easily add professional components to your website! Here are free resources:
 
 ### **1. Tailwind UI Components (Free)**
+
 - **Website:** [https://tailwindui.com/components](https://tailwindui.com/components)
 - **What it offers:** Ready-to-use buttons, cards, and menus
 - **No signup needed** for free components
 
 ### **2. Tailwind CSS Documentation**
+
 - **Website:** [https://tailwindcss.com/docs](https://tailwindcss.com/docs)
 - **What it offers:** Official examples for every style
 - Great for learning how classes work
 
 ### **3. Free Component Libraries**
+
 - **HyperUI:** [https://www.hyperui.dev/](https://www.hyperui.dev/)
 - **Tailblocks:** [https://tailblocks.cc/](https://tailblocks.cc/)
 
@@ -1377,12 +1379,36 @@ Want to try something cool? Here's how to add a photo gallery that automatically
 <div class="mt-8">
   <h3 class="text-2xl font-bold mb-4">My Photo Gallery</h3>
   <div class="flex flex-wrap gap-4">
-    <img src="https://picsum.photos/200/200?random=1" alt="Photo 1" class="w-32 h-32 object-cover rounded-lg shadow-md">
-    <img src="https://picsum.photos/200/200?random=2" alt="Photo 2" class="w-32 h-32 object-cover rounded-lg shadow-md">
-    <img src="https://picsum.photos/200/200?random=3" alt="Photo 3" class="w-32 h-32 object-cover rounded-lg shadow-md">
-    <img src="https://picsum.photos/200/200?random=4" alt="Photo 4" class="w-32 h-32 object-cover rounded-lg shadow-md">
-    <img src="https://picsum.photos/200/200?random=5" alt="Photo 5" class="w-32 h-32 object-cover rounded-lg shadow-md">
-    <img src="https://picsum.photos/200/200?random=6" alt="Photo 6" class="w-32 h-32 object-cover rounded-lg shadow-md">
+    <img
+      src="https://picsum.photos/200/200?random=1"
+      alt="Photo 1"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://picsum.photos/200/200?random=2"
+      alt="Photo 2"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://picsum.photos/200/200?random=3"
+      alt="Photo 3"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://picsum.photos/200/200?random=4"
+      alt="Photo 4"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://picsum.photos/200/200?random=5"
+      alt="Photo 5"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://picsum.photos/200/200?random=6"
+      alt="Photo 6"
+      class="w-32 h-32 object-cover rounded-lg shadow-md"
+    />
   </div>
 </div>
 ```
