@@ -1,5 +1,8 @@
 function moveScenery() {
   // TODO 2: Move background scenery based on current level speed
+  for (var i= 0;i < moveScenery.biulding.instanceslenght; i++) {
+    var biuldingInstance = Scenery.building.instances[i];
+biuldingInstance.x = + biuldingInstance.x + (biuldingInstance.sprrdX)
 }
 
 function generateLevel() {
