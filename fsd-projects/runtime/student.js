@@ -11,6 +11,11 @@ function generateLevel() {
 
 function create(obj) {
   // TODO 4: Create a game object based on its type and kind
+  "obstacle"
+"enemy"
+"powerup"
+"goal"
+"platform"
 }
 
 function filterObjects(type) {
