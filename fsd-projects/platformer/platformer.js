@@ -33,16 +33,20 @@ $(function () {
     createPlatform(500, 0, 20, 290);
     createPlatform(300, 400, 400, 10, "red");
     createPlatform(100, 20, 100, 10, "blue", 0, 0, 0, 200, 700, 1); // bright green for a finished platform
-
+    createPlatform(900, 30, 100, 10, "lime", 900, 900, 900, 100, 700, 1); // bright green for a finished platform
+    createPlatform(900, 30, 100, 10, "GREEN", 700, 700, 700, 100, 400, 1); // bright green for a finished platform
+    createPlatform(900, 30, 100, 10, "GRAY", 500, 500, 500, 200, 400, 1); // bright green for a finished platform
     // TODO 3 - Create Collectables
-    createCollectable("steve", 1500, 50);
-    createCollectable("diamond", 200, 170, 0.5, 0.7);
-    createCollectable("grace", 200, 170, 0.7, 0.5);
+    createCollectable("steve", 500, 50);
+    createCollectable("diamond", 1000, 170, 0.7, 0.5);
+  createCollectable("grace", 400, 170, 0.7, 0.5);
     createBadPlatform(300, 400, 100, 20, "Red", 0, 0, 0, 200, 700, 1);
     // TODO 4 - Create Cannons
     createCannon("top", 200, 2000, 20, 10, 100, 700, 2);
     createCannon("right", 300, 1997);
     createCannon("right", 100, 1997);
+        createCannon("right", 700, 1997);
+
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
